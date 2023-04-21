@@ -18,6 +18,7 @@ export default function App() {
       <Text></Text>
       <Text style={styles.subheader}>Sun Requirements:</Text>
       <Text style={styles.regulartext}>Bright to Medium Indirect Light</Text>
+      <Image source={require("./assets/plantprofilebar.png")}></Image>
     </View>
   )
 }
