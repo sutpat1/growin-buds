@@ -1,12 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput, SafeAreaView } from 'react-native';
 
-export default function App() {
+export default function Login({ navigation }) {
   return (
     <View style={styles.container}>
       <Text style = {styles.title}>login</Text>
       <Image 
-          source = {require("./assets/loginPlant.png")}
+          source = {require("../assets/loginPlant.png")}
           style = {styles.image}></Image>
       
       <StatusBar style="auto" />
@@ -29,7 +29,9 @@ export default function App() {
         />
       </SafeAreaView>
 
-       <TouchableOpacity style = {styles.login}>
+       <TouchableOpacity 
+          style = {styles.login}
+          onPress = {() => navigation.navigate("Home")}>
           <Text style = {styles.buttonText}>login</Text>
        </TouchableOpacity>
     </View>
