@@ -12,15 +12,15 @@ export default function App()
         borderWidth={2}
         borderColor="#000000"
     />
-      <Image source = {require("./assets/leaf.png")} style={{position: 'absolute', top: 175, left: 20}}/>
-      <Image source = {require("./assets/eclipse.png")} style={{position: 'absolute', top: 175, left: 190}}/>
-      <Image source = {require("./assets/shovel.png")} style={{position: 'absolute', top: 182, left: 200}}/>
-      <Image source = {require("./assets/rectangle1.png")} style={{position: 'absolute', top: 250, left: 25}}/>
-      <Image source = {require("./assets/rectangle.png")} style={{position: 'absolute', top: 425, left: 25}}/>
-      <Image source = {require("./assets/rectangle.png")} style={{position: 'absolute', top: 600, left: 25}}/>
-      <Image source = {require("./assets/img_one.png")} style={{position: 'absolute', top: 260, left: 250}}/>
-      <Image source = {require("./assets/img_two.png")} style={{position: 'absolute', top: 435, left: 250}}/>
-      <Image source = {require("./assets/img_three.png")} style={{position: 'absolute', top: 610, left: 250}}/>
+      <Image source = {require("../assets/leaf.png")} style={{position: 'absolute', top: 175, left: 20}}/>
+      <Image source = {require("../assets/eclipse.png")} style={{position: 'absolute', top: 175, left: 190}}/>
+      <Image source = {require("../assets/shovel.png")} style={{position: 'absolute', top: 182, left: 200}}/>
+      <Image source = {require("../assets/rectangle.png")} style={{position: 'absolute', top: 250, left: 25}}/>
+      <Image source = {require("../assets/rectangle.png")} style={{position: 'absolute', top: 425, left: 25}}/>
+      <Image source = {require("../assets/rectangle.png")} style={{position: 'absolute', top: 600, left: 25}}/>
+      <Image source = {require("../assets/img_one.png")} style={{position: 'absolute', top: 260, left: 250}}/>
+      <Image source = {require("../assets/img_two.png")} style={{position: 'absolute', top: 435, left: 250}}/>
+      <Image source = {require("../assets/img_three.png")} style={{position: 'absolute', top: 610, left: 250}}/>
       <Text style={styles.plant_info_text}>Plant {'\n'} Info</Text>
       <Text style={styles.gardening_tips_text}>Gardening {'\n'} Tips</Text>
       <Text style={styles.how_to_care_text}> How to Care for {'\n'} Pothos Plants </Text>
