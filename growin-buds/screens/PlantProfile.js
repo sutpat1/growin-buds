@@ -5,7 +5,7 @@ export default function App() {
     <View style={styles.container}>
       <Text style={styles.plantname}>Nessie</Text>
       <Text style={styles.planttype}>Monstera Deliciosa</Text>
-      <Image source={require("./assets/monstera.png")}></Image>
+      <Image source={require("../assets/monstera.png")}></Image>
       <Text></Text>
       <Text style={styles.subheader}>Birthday:</Text>
       <Text style={styles.regulartext}>01/23</Text>
@@ -18,23 +18,22 @@ export default function App() {
       <Text></Text>
       <Text style={styles.subheader}>Sun Requirements:</Text>
       <Text style={styles.regulartext}>Bright to Medium Indirect Light</Text>
-      <Image source={require("./assets/plantprofilebar.png")}></Image>
     </View>
   )
 }
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     backgroundColor: '#fffff5',
-    justifyContent: 'center',
     alignItems: 'center',
+    justifyContent: 'center',
   },
 
   plantname: {
     fontSize: 45,
     fontWeight: 500,
     textAlign: 'center',
-    marginTop: 60,
   },
 
   planttype: {
