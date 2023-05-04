@@ -6,13 +6,13 @@ export default function App() {
   return (
   <View style={styles.container}>
     <Image 
-        source = {require("./assets/Rectangle1.png")}
+        source = {require("../assets/Rectangle1.png")}
         style = {styles.image}></Image>
     <Image 
-        source = {require("./assets/Grace.png")}
+        source = {require("../assets/Grace.png")}
         style = {styles.image}></Image>
     <Image 
-        source = {require("./assets/Followers.png")}
+        source = {require("../assets/Followers.png")}
         style = {styles.image}></Image>
 
 <TouchableOpacity style={styles.button}>
@@ -20,10 +20,7 @@ export default function App() {
       </TouchableOpacity>
 
     <Image 
-        source = {require("./assets/Group30.png")}
-        style = {styles.image}></Image>
-    <Image 
-        source = {require("./assets/Bar.png")}
+        source = {require("../assets/Group30.png")}
         style = {styles.image}></Image>
 
 
