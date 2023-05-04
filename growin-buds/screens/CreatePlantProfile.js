@@ -1,17 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput, SafeAreaView } from 'react-native';
+import { StyleSheet, Pressable,Text, View,TouchableOpacity, ScrollView, TextInput, SafeAreaView } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
+      <ScrollView style = {styles.scollView}>
       <Text style = {styles.title}>Create plant profile</Text>
-      <Image 
-         // source = {require("./assets/loginPlant.png")}
-          style = {styles.image}></Image>
       
       <StatusBar style="auto" />
 
-      <Text style={styles.inputField}>name</Text>
+      <Text style={styles.inputField}>Name</Text>
       <SafeAreaView>
         <TextInput
           style={styles.input}
@@ -20,16 +18,16 @@ export default function App() {
         />
       </SafeAreaView>
       
-      <Text style={styles.inputField}>plant species</Text>
+      <Text style={styles.inputField}>Plant Species</Text>
       <SafeAreaView>
         <TextInput
           style={styles.input}
-          placeholder="ex:Monstera Deliciosa"
+          placeholder="ex: Monstera Deliciosa"
           keyboardType="text"
         />
       </SafeAreaView>
 
-      <Text style={styles.inputField}>plant birthday</Text>
+      <Text style={styles.inputField}>Plant Birthday</Text>
       <SafeAreaView>
         <TextInput
           style={styles.input}
@@ -37,7 +35,7 @@ export default function App() {
           keyboardType="text"
         />
       </SafeAreaView>
-      <Text style={styles.inputField}>soil requirements</Text>
+      <Text style={styles.inputField}>Soil Requirements</Text>
       <SafeAreaView>
         <TextInput
           style={styles.input}
@@ -45,7 +43,7 @@ export default function App() {
           keyboardType="text"
         />
       </SafeAreaView>
-      <Text style={styles.inputField}>sun requirements</Text>
+      <Text style={styles.inputField}>Sun Requirements</Text>
       <SafeAreaView>
         <TextInput
           style={styles.input}
@@ -53,10 +51,10 @@ export default function App() {
           keyboardType="text"
         />
       </SafeAreaView>
-
-       <TouchableOpacity style = {styles.login}>
-          <Text style = {styles.buttonText}>create</Text>
+       <TouchableOpacity style = {styles.button} >
+         <Text style = {styles.buttonText}>Create</Text>
        </TouchableOpacity>
+       </ScrollView>
     </View>
 
   );
@@ -70,27 +68,26 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 
-  image: {
-    alignItems: 'center',
-    margin: 40
-  },
-
   title: {
-    margin: 30,
-    fontSize: 60,
+    fontSize: 50,
   },
 
-  login: {
+ button: {
     fontSize: 20,
-    backgroundColor: '#FFD260',
-    margin: 30,
     paddingHorizontal: 60,
     paddingVertical: 20,
     borderRadius: 50,
-  }, 
+    backgroundColor: '#FFD260',
+    alignSelf: 'center',
+    marginHorizontal: '1%',
+    marginBottom: 6,
+    minWidth: '48%',
+    textAlign: 'center',
+  },
 
   buttonText: {
     fontSize: 20,
+    color:'white'
   },
 
   input: {
@@ -99,11 +96,14 @@ const styles = StyleSheet.create({
     margin: 20,
     borderWidth: 1,
     borderRadius: 50,
-    padding: 20,
+    padding: 10,
+    alignSelf: 'center'
   },
 
   inputField: {
     fontSize: 25,
-    textAlign: 'left'
+    paddingTop: 10,
+    margin: 5,
+    textAlign: 'center'
   }
 });
