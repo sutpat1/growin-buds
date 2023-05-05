@@ -1,8 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput, SafeAreaView, Button } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 
 
-export default function App() {
+export default function App({ navigation }) {
   return (
   <View style={styles.container}>
     <Image 
@@ -15,18 +15,17 @@ export default function App() {
         source = {require("../assets/Followers.png")}
         style = {styles.image}></Image>
 
-<TouchableOpacity style={styles.button}>
-        <Text style={styles.buttonText}>Create new plant profile</Text>
-      </TouchableOpacity>
+    <TouchableOpacity 
+      style={styles.button}
+      onPress = {() => navigation.navigate("CreatePlantProfile")}>
+      <Text style={styles.buttonText}>Create new plant profile</Text>
+    </TouchableOpacity>
 
     <Image 
         source = {require("../assets/Group30.png")}
         style = {styles.image}></Image>
 
-
     <StatusBar style="auto" />
-
-
 
     </View>);
 }
@@ -41,7 +40,7 @@ const styles = StyleSheet.create({
 
   image: {
     alignItems: 'center',
-    topMargin: 40
+    margin: 20,
   },
 
   button: {
@@ -51,22 +50,12 @@ const styles = StyleSheet.create({
     paddingVertical: 12,
     paddingHorizontal: 24,
     borderRadius: 25,
-
   },
 
   title: {
     topMargin: 40,
     fontSize: 60,
   },
-
-  login: {
-    fontSize: 20,
-    backgroundColor: '#FC9778',
-    margin: 30,
-    paddingHorizontal: 60,
-    paddingVertical: 20,
-    borderRadius: 50,
-  }, 
 
   buttonText: {
     fontSize: 20,

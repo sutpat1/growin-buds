@@ -1,20 +1,21 @@
 import React, {useEffect, useState} from "react";
 import { StatusBar } from 'expo-status-bar';
 import { SearchBar } from "react-native";
-import { StyleSheet, Text, TextInput, View, Image, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, TextInput, View, Image, TouchableOpacity, ScrollView} from 'react-native';
 
 export default function App() 
 {
   return (
+    <ScrollView style={styles.scrollView}>
     <View style={styles.container}> 
     <TextInput style={styles.input}
         placeholder="                      Search                      "
         borderWidth={2}
         borderColor="#000000"
     />
-      <Image source = {require("../assets/leaf.png")} style={{position: 'absolute', top: 175, left: 20}}/>
-      <Image source = {require("../assets/eclipse.png")} style={{position: 'absolute', top: 175, left: 190}}/>
-      <Image source = {require("../assets/shovel.png")} style={{position: 'absolute', top: 182, left: 200}}/>
+      <Image source = {require("../assets/leaf.png")} style={{position: 'absolute', top: 135, left: 40}}/>
+      <Image source = {require("../assets/eclipse.png")} style={{position: 'absolute', top: 135, left: 200}}/>
+      <Image source = {require("../assets/shovel.png")} style={{position: 'absolute', top: 145, left: 210}}/>
       <Image source = {require("../assets/rectangle.png")} style={{position: 'absolute', top: 250, left: 25}}/>
       <Image source = {require("../assets/rectangle.png")} style={{position: 'absolute', top: 425, left: 25}}/>
       <Image source = {require("../assets/rectangle.png")} style={{position: 'absolute', top: 600, left: 25}}/>
@@ -30,6 +31,7 @@ export default function App()
       <Text style={styles.text_two}>Get to know your garden · Plan your {'\n'}garden · Learn how to plant · Feed{'\n'} and water...</Text>
       <Text style={styles.text_three}>In late February to early March, start{'\n'}cabbages, kale, broccoli, {'\n'}cauliflower, onions...</Text>
     </View>
+    </ScrollView>
   );
 }
 
@@ -37,15 +39,18 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fffff5',
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: 'flex',
+    justifyContent: 'flex',
+  },
+  scrollView: {
+    backgroundColor: '#fffff5',
   },
   plant_info_text: {
-    position: 'absolute', top:175, left: 100,
+    position: 'absolute', top:135, left: 110,
     fontSize: 25,
   },
   gardening_tips_text: {
-    position: 'absolute', top:175, left: 250,
+    position: 'absolute', top:135, left: 265,
     fontSize: 25,
   },
   how_to_care_text: {
@@ -79,7 +84,7 @@ const styles = StyleSheet.create({
     fontSize: 15,
   },
   input: {
-    position: 'absolute', top: 80, left: 25,
+    position: 'absolute', top: 50, left: 50,
     color: '#FFF000',
     fontSize: 25,
     height: 45,
