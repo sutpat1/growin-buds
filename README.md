@@ -43,7 +43,8 @@ growin-buds/
   ├── App.js                 # Main application component
   ├── app.json               # Expo configuration
   ├── babel.config.js        # Babel configuration
-  └── package.json           # Dependencies and scripts
+  ├── package.json           # Dependencies and scripts
+  └── package-lock.json      # Dependency lock file
 </pre>
 
 ---
@@ -147,11 +148,12 @@ The app can be customized in several ways:
 
 ## 👥 Contributors
 
-This application was developed by a team of four developers:
-- [Your Name](https://github.com/yourusername)
-- [Team Member 2](https://github.com/teammember2)
-- [Team Member 3](https://github.com/teammember3)
-- [Team Member 4](https://github.com/teammember4)
+This application was developed by a team of five developers:
+- [Sharv Utpat](https://github.com/sutpat1)
+- [Hemal Pathak](https://github.com/hxpathak)
+- [Sudharsan Balaji](https://github.com/sudh-balaji)
+- [Gabriella Miani](https://github.com/gmiani)
+- [Stephanie Calvillo](https://github.com/StarriiChii)
 
 ---
 
