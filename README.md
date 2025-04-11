@@ -73,7 +73,7 @@ cd growin-buds
 npm install
 ```
 
-#or
+**or**
 
 ```bash
 yarn install
@@ -81,19 +81,19 @@ yarn install
 
 ### 3. Start the Development Server
 
-or
+**or**
 
 ```bash
 npm start
 ```
 
-or
+**or**
 
 ```bash
 yarn start
 ```
 
-or
+**or**
 
 ```bash
 expo start
