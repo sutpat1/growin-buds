@@ -65,11 +65,11 @@ growin-buds/
    cd growin-buds
 
 2. Install dependencies
-   ```bashnpm install
+   ```bash npm install
     # or with yarn
    ```yarn install
 
-Start the development server
+3. Start the development server
    ```bashnpm start
    # or with yarn
    ```yarn start
