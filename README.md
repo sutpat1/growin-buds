@@ -58,26 +58,51 @@ growin-buds/
 
 ## Installation
 
-1. Clone the repository
+Follow these steps to get the project up and running locally:
 
-   ```bash
-   git clone https://github.com/yourusername/growin-buds.git
-   cd growin-buds
+### 1. Clone the Repository
 
-2. Install dependencies
-   ```bash npm install
-    # or with yarn
-   ```yarn install
+```bash
+git clone https://github.com/yourusername/growin-buds.git
+cd growin-buds
+```
 
-3. Start the development server
-   ```bashnpm start
-   # or with yarn
-   ```yarn start
-   # or with expo
-   ```expo start
+### 2. Install Dependencies
 
-Run on a device or emulator
+Using **npm**:
 
-Scan the QR code with the Expo Go app (Android) or Camera app (iOS)
-Press 'a' for Android emulator
-Press 'i' for iOS simulator
+```bash
+npm install
+```
+
+Or using **yarn**:
+
+```bash
+yarn install
+```
+
+### 3. Start the Development Server
+
+Using **npm**:
+
+```bash
+npm start
+```
+
+Or using **yarn**:
+
+```bash
+yarn start
+```
+
+Or with **Expo**:
+
+```bash
+expo start
+```
+
+## 📱 Run on a Device or Emulator
+
+- Scan the QR code with the **Expo Go** app (Android) or the **Camera** app (iOS).
+- Press `a` to open in the Android emulator.
+- Press `i` to open in the iOS simulator.
