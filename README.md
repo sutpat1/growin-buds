@@ -81,8 +81,6 @@ yarn install
 
 ### 3. Start the Development Server
 
-**or**
-
 ```bash
 npm start
 ```
@@ -104,3 +102,67 @@ expo start
 - Scan the QR code with the **Expo Go** app (Android) or the **Camera** app (iOS).
 - Press `a` to open in the Android emulator.
 - Press `i` to open in the iOS simulator.
+
+---
+
+## 📱 App Walkthrough
+
+**Onboarding**
+- The app starts with a welcome screen featuring the Growin' Buds logo
+- Users can either log in to an existing account or sign up for a new account
+- Sign up requires name, email, and password
+
+**Home Dashboard**
+- View and manage daily plant care tasks
+- Check off completed tasks to earn points
+- View overall plant health and care statistics
+
+**Plant Management**
+- Create detailed profiles for each plant including species, watering schedules, and sunlight requirements
+- Track the growth and health of individual plants
+- Set custom reminders for plant care
+
+**Social Features**
+- Connect with other plant enthusiasts
+- Share tips, progress, and plant photos
+- Discover new plant care techniques
+
+**Search & Discovery**
+- Browse articles about plant care and gardening
+- Search for specific plant information
+- Find beginner-friendly gardening tips
+
+---
+
+## 🔧 Customization
+
+The app can be customized in several ways:
+
+* Modify the color scheme in the style definitions
+* Add new plant species and care recommendations
+* Extend the social features with additional interaction options
+* Create custom achievement systems for your specific gardening community
+
+---
+
+## 👥 Contributors
+
+This application was developed by a team of four developers:
+- [Your Name](https://github.com/yourusername)
+- [Team Member 2](https://github.com/teammember2)
+- [Team Member 3](https://github.com/teammember3)
+- [Team Member 4](https://github.com/teammember4)
+
+---
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+---
+
+## 🤝 Acknowledgements
+
+* Expo team for the amazing development platform
+* React Native community for comprehensive documentation
+* All plant lovers who inspired this application
