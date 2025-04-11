@@ -69,13 +69,11 @@ cd growin-buds
 
 ### 2. Install Dependencies
 
-Using **npm**:
-
 ```bash
 npm install
 ```
 
-Or using **yarn**:
+#or
 
 ```bash
 yarn install
@@ -83,19 +81,19 @@ yarn install
 
 ### 3. Start the Development Server
 
-Using **npm**:
+or
 
 ```bash
 npm start
 ```
 
-Or using **yarn**:
+or
 
 ```bash
 yarn start
 ```
 
-Or with **Expo**:
+or
 
 ```bash
 expo start
