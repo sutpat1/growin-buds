@@ -2,7 +2,7 @@
 A social media application for gardening enthusiasts built with **React Native** and **Expo** to connect plant lovers, track plant care, and share gardening knowledge.
 
 ## 🌱 Live Demo
-[Try Growin' Buds](https://growin-buds-demo.example.com/) <!-- Replace with your actual deployment link when available -->
+[Try Growin' Buds]() <!-- Replace with your actual deployment link when available -->
 
 ---
 
